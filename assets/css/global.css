@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    --cor-texto: #ecdd5c;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #8c1630;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    width: 1000px;
+    align-items: center;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+.spacer {
+    justify-content:space-between;
+}
+
+.title {
+    display:flex;
+    justify-content: center;
+    color: #ecdd5c;
+}
+
+.menu {
+    display:flex;
+    justify-content: center;
+}
+
+nav ul {
+    display:flex;
+}
+
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-letras);
+    font-family: Arial;
+}
+
+#mainfoto {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/Messi.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 880px;
+}
+
+#titulosclube {
+    display: flex;
+    justify-content: center;
+    background-color: #8c1630;
+}
+
+#titulosclube h1 {
+    margin-bottom: 20px;
+    color:#1e2b78;
+}
+
+.containerlist {
+    display: grid;
+    justify-content:space-between;
+    justify-items: left;
+    width: 1000px;
+    color: var(--cor-texto);
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 180px 180px 180px;
+}
+
+.containerlist ul {
+    font-size: 16;
+    font-weight: bold;
+}
+
+.containerlist li {
+    font-size: 12;
+    font-weight:normal;
+}
+
+.containerlistind {
+    display: grid;
+    justify-content:center;
+    width: 1000px;
+    color: var(--cor-texto);
+    grid-template-columns: 250px 250px;
+    margin-bottom: 100px;
+}
+
+.containerlistind ul {
+    font-size: 16;
+    font-weight: bold;
+}
+
+.containerlistind li {
+    font-size: 12;
+    font-weight:normal;
+}
+
+#titulosind {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: #8c1630;
+    justify-content: center;
+}
+
+#titulosind h1 {
+    margin-bottom: 20px;
+    color:#1e2b78;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: #8c1630;
+}
+
+.statsimg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    padding: 0px;
+}
+
+.rodape {
+    background-color: #8c1630;
+    height: 40px;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.rodape_divisoria {
+    width: 100%;
+    height: 4px;
+    background-color: #1e2b78;
+    margin-bottom: 10px;
+}
+
+footer .rodape_divisoria {
+    height: 2px;
+}
+
+.rodape_conteudo {
+    color: #ecdd5c;
+    font-size: 12;
+    opacity: 0.2;
+}
+
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid #1e2b78;
+    text-decoration: none;
+    color: #ecdd5c;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 0;
+} 
+
+
+.hbtn a {
+    padding-right: 8px;
+} 
+
+
+.hb-fill-middle-br::before {
+    position: absolute;
+    content: "";
+    background: #1e2b78;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: auto auto 0px 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+    border: 2px solid #1e2b78;
+} 
+
+
+.hb-fill-middle-br:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+} 
+
+
+.hb-fill-middle-br:hover {
+    color: rgb(0, 0, 0);
+    background: #1e2b78;
+    transition: color 0.3s ease 0s, background 0s ease 0.3s;
+} 
+
+
+.hb-fill-middle-br::after {
+    position: absolute;
+    content: "";
+    background: #1e2b78;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+    border: 2px solid #1e2b78;
+} 
+
+
+.hb-fill-middle-br:hover::after {
+    height: 50%;
+}
